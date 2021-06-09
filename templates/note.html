@@ -1,0 +1,116 @@
+<table border="1" style="width: 100%;text-align: left;"> 
+    <tr>
+        <th>
+            Endpoint
+        </th>
+        <th>
+            Method
+        </th>
+        <th>
+            Parameter
+        </th>
+        <th>
+            Description
+        </th>
+    </tr>
+    <tr>
+        <td>
+            {{url}}weather/
+        </td>
+        <td>
+            GET
+        </td>
+        <td>
+            /weather/"latitute"/"longitute"
+        </td>
+        <td>
+            "Get weather value"
+        </td>
+    </tr>
+    <tr>
+        <td>
+            {{url}}account/add
+        </td>
+        <td>
+            POST
+        </td>
+        <td>
+            <ul>
+                <li>nama</li>
+                <li>alamat</li>
+                <li>jenis_kelamin </li>
+                <li>nomor_wa</li>
+                <li>jenis_pengguna</li>
+            </ul>
+        </td>
+        <td>
+            "Add account / Sign Up"
+        </td>
+    </tr>
+    <tr>
+        <td>
+            {{url}}account/get/
+        </td>
+        <td>
+            GET
+        </td>
+        <td>
+            /account/get/"wa_number"
+        </td>
+        <td>
+            "Sign In"
+        </td>
+    </tr>
+    <tr>
+        <td>
+            {{url}}account/show
+        </td>
+        <td>
+            GET
+        </td>
+        <td>
+            
+        </td>
+        <td>
+            "Show List Account"
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            {{url}}report/view
+        </td>
+        <td>
+            GET
+        </td>
+        <td>
+            
+        </td>
+        <td>
+            "Show List Report"
+        </td>
+    </tr>
+
+
+    <tr>
+        <td>
+            {{url}}report/add
+        </td>
+        <td>
+            POST
+        </td>
+        <td>
+            <ul>
+                <li>judul</li>
+                <li>kronologi</li>
+                <li>nomor_wa </li>
+                <li>foto >> file</li>
+                <li>waktu_bencana</li>
+                <li>lat_long</li>
+            </ul>
+        </td>
+        <td>
+            "Show List Report"
+        </td>
+    </tr>
+</table>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<form action="/account/add" method="POST">
+  <table>
+    <tr><td><label>nama</label></td><td><input type="text" name="nama"></td></tr>
+    <tr><td><label>alamat</label></td><td><input type="text" name="alamat"></td></tr>
+    <tr><td><label>jenis_kelamin [0|1]</label></td><td><input type="text" name="jenis_kelamin"></td></tr>
+    <tr><td><label>nomor_wa</label></td><td><input type="text" name="nomor_wa"></td></tr>
+    <tr><td><label>jenis_pengguna [0|1]</label></td><td><input type="text" name="jenis_pengguna"></td></tr>
+    <tr><td><input type="submit"></td></tr>
+  </table>
+</form>
+<table border=1 style="text-align: center;width: 100%;">
+
+<tr>
+  {% for i in range(0,6) %}
+    <th> 
+      {{head[i]}}
+    </th>
+  {% endfor %}
+</tr>
+{% for items in items %}
+<tr>
+    <td> 
+      {{ items.nama_provinsi }}
+    </td>
+    <td> 
+      {{ items.nama_kabupaten_kota }}
+    </td>
+    <td> 
+      {{ items.nama_kecamatan }}
+    </td>
+    <td> 
+      {{ items.nama_kelurahan }}
+    </td>
+    <td> 
+      {{ items.laki_laki }}
+    </td>
+    <td> 
+      {{ items.perempuan }}
+    </td>
+</tr>
+{% endfor %}
+</table>
